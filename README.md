@@ -1,15 +1,15 @@
 # File Integrity Monitor (FIM)
 
-A lightweight, Python-based File Integrity Monitor designed to track cryptographic states of critical files and instantly detect unauthorized modifications or tampering. 
+A lightweight, Python based File Integrity Monitor designed to track cryptographic states of critical files and instantly detect unauthorized modifications or tampering. 
 
-I built this tool to better understand host-based intrusion detection systems (HIDS) and to ensure critical configuration files remain unmodified in secure environments.
+I built this tool to better understand host based intrusion detection systems (HIDS) and to ensure critical configuration files remain unmodified in secure environments.
 
 ---
 
 ## 🚀 Features
 - **SHA-256 Hashing Engine:** Generates secure cryptographic fingerprints of target files.
 - **Baseline Tracking:** Saves initial file states into a secure local baseline record (`baseline.txt`).
-- **Tampering Alerts:** Automatically compares current file hashes against the stored baseline to spot even a single-byte alteration.
+- **Tampering Alerts:** Automatically compares current file hashes against the stored baseline to spot even a single byte alteration.
 - **Efficient Chunk Reading:** Reads files in binary blocks (`4096 bytes`) to safely handle large files without exhausting system memory.
 
 ---
